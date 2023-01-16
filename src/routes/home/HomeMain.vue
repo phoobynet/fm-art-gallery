@@ -5,9 +5,7 @@
 </script>
 
 <template>
-  <div>
-    Home
-  </div>
+<main></main>
 </template>
 
 <style

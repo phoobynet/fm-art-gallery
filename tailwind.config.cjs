@@ -6,37 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    screens: {
+      mobile: '375px',
+      tablet: '768px',
+      desktop: '1440px'
+    },
     fontFamily: {
-      heading: ['Big Shoulders', 'sans-serif'],
+      heading: ['Big Shoulders Display', 'sans-serif'],
       body: ['Outfit', 'sans-serif'],
-    },
-
-    fontSize: {
-      'heading-xl': ['96px', {
-        'line-height': '88px',
-        'font-weight': 'black',
-      }],
-      'heading-l': ['70px', {
-        'line-height': '70px',
-        'font-weight': 'black',
-      }],
-      'heading-m': ['60px', {
-        'line-height': '50px',
-        'font-weight': 'black',
-      }],
-      'heading-s': ['36px', {
-        'line-height': '36px',
-        'font-weight': 'black',
-      }],
-      'body-m': ['22px', {
-        'line-height': '32px',
-        'font-weight': 'light',
-      }],
-      'body-s': ['18px', {
-        'line-height': '28px',
-        'font-weight': 'light',
-      }],
-    },
+    }
   },
   plugins: [],
 }
