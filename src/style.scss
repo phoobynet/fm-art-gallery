@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[60px] uppercase font-heading font-black leading-[55px] text-almost-black;
+
+    // tablet
+    @apply tablet:text-[70px] tablet:leading-[65px];
+
+    // desktop
+    @apply desktop:text-[96px] desktop:leading-[88px];
+  }
+
+  p {
+    @apply font-light font-body text-dark-gray leading-[28px] text-[18px];
+
+    // desktop
+    @apply desktop:text-[22px] desktop:leading-[32px];
+  }
+}

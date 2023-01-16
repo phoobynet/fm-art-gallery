@@ -2,15 +2,34 @@
   lang="ts"
   setup
 >
+import HomeHeaderHeroImg from '@/routes/home/HomeHeaderHeroImg.vue'
+import LinkButton from '@/components/LinkButton.vue'
+
+const onClick = () => {
+  console.log('Hello, World!')
+}
 </script>
 
 <template>
   <header class="home-header">
-    <img
-      src=""
-      alt=""
-    >
-    <h1>modern art gallery</h1>
+    <div class="hero-image">
+      <HomeHeaderHeroImg />
+    </div>
+    <div class="hero-content">
+      <div class="heading">
+        <h1>modern art gallery</h1>
+      </div>
+      <div class="introduction">
+        <p>The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these
+          pieces
+          inspire you? Visit us and find out.</p>
+      </div>
+      <LinkButton
+        @click="onClick"
+        direction="right"
+      >our location
+      </LinkButton>
+    </div>
   </header>
 </template>
 
@@ -20,14 +39,6 @@
 >
   .home-header {
     @apply grid;
-
-    img {
-      content: url('@/assets/mobile/image-hero.jpg')
-    }
-
-    h1 {
-      @apply text-[60px] uppercase font-heading font-black leading-[55px];
-    }
   }
 </style>
 
