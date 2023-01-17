@@ -20,12 +20,7 @@ import HomeFooter from '@/routes/home/HomeFooter.vue'
   scoped
 >
   .home {
-    @apply min-h-screen;
-    @apply max-w-screen-mobile;
-    @apply tablet:max-w-screen-tablet;
-    @apply desktop:max-w-screen-desktop;
-
-    margin-inline: auto;
+    @apply grid;
   }
 </style>
 

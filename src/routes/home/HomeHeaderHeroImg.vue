@@ -1,32 +1,25 @@
 <template>
-  <img
-    src="@/assets/mobile/image-hero.jpg"
-    alt=""
-    class="hero-mobile"
-  >
+  <picture>
+    <source
+      srcset="@/assets/desktop/image-hero.jpg, @/assets/desktop/image-hero@2x.jpg 2x"
+      media="(min-width:1440px)"
+      alt=""
+    >
 
-  <img
-    src="@/assets/tablet/image-hero.jpg"
-    alt=""
-    class="hero-tablet"
-  >
+    <source
+      srcset="@/assets/tablet/image-hero.jpg, @/assets/tablet/image-hero@2x.jpg 2x"
+      media="(min-width:768px)"
+      alt=""
+    >
 
-  <img
-    src="@/assets/desktop/image-hero.jpg"
-    alt=""
-    class="hero-desktop"
-  >
+    <source
+      srcset="@/assets/mobile/image-hero.jpg, @/assets/mobile/image-hero@2x.jpg 2x"
+      media="(min-width:375px)"
+      alt=""
+    >
+    <img
+      src="@/assets/mobile/image-hero.jpg"
+      alt=""
+    >
+  </picture>
 </template>
-<style lang="scss">
-  .hero-mobile {
-    @apply mobile:block tablet:hidden desktop:hidden;
-  }
-
-  .hero-tablet {
-    @apply mobile:hidden tablet:block desktop:hidden;
-  }
-
-  .hero-desktop {
-    @apply mobile:hidden tablet:hidden desktop:block;
-  }
-</style>
